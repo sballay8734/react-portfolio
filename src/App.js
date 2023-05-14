@@ -19,8 +19,8 @@ function App() {
       <Portfolio />
       <CurrentlyLearning />
       {/* Maybe remove FAQs and Services */}
-      <FAQs />
-      <Services />
+      {/* <FAQs />
+      <Services /> */}
       <Contact />
       <Footer />
       <FloatingNav />

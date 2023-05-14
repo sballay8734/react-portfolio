@@ -2,7 +2,7 @@ import "./currently-learning.css"
 
 function CurrentlyLearning() {
   return (
-    <section id="currently-learning">
+    <section id="current-learning">
       <h2>Currently Learning</h2>
     </section>
   )
