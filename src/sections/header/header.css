@@ -1,7 +1,7 @@
 header {
   /* Same height as navbar */
-  margin-top: 3rem;
-  height: calc(100vh - 3rem);
+  margin-top: 4rem;
+  height: calc(100vh - 4rem);
   display: grid;
   place-items: center;
   background-color: var(--color-white);
@@ -81,4 +81,38 @@ header {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+/* MEDIA QUERIES (tablets) */
+
+@media screen and (max-width: 1024px) {
+  header {
+    margin-top: 0;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header__profile {
+    width: 14rem;
+    height: 17rem;
+    max-width: 60%;
+    max-height: 35vh;
+  }
+  .header__container p {
+    width: 100%;
+  }
+  .header__cta {
+    gap: 1rem;
+  }
+
+  .header__socials {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header__cta a {
+    font-size: .8rem;
+  }
 }
