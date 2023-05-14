@@ -56,3 +56,40 @@
 .about__right a {
   margin-top: 2rem;
 }
+
+/* MEDIA QUERIES (tablets) */
+@media screen and (max-width: 1024px) {
+  .about__left {
+    display: none;
+  }
+
+  .about__container {
+    grid-template-columns: 1fr;
+  }
+
+  .about__right h2 {
+    text-align: center;
+  }
+
+  .about__right a {
+    margin-inline: auto;
+  }
+}
+
+/* MEDIA QUERIES (phones) */
+@media screen and (max-width: 600px) {
+  .about__cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .about__card {
+    font-size: .8rem;
+  }
+
+  .about__cards h5 {
+    font-size: .8rem;
+  }
+}

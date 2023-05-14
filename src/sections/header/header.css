@@ -58,13 +58,14 @@ header {
   background-color: var(--color-light);
 
   aspect-ratio: 1/1;
-  height: 2rem;
-  width: 2rem;
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.4rem;
 
   display: grid;
   place-items: center;
 
-  border-radius: var(--border-radius-1);
+  border-radius: 50%;
 }
 
 .header__socials a:hover {

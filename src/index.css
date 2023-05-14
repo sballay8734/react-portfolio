@@ -172,7 +172,7 @@ img {
   }
 
   section {
-    padding: 8rem 0;
+    padding: 6rem 0;
   }
 
   section > p {
@@ -209,5 +209,9 @@ img {
 
   section > p {
     width: var(--container-width-md)
+  }
+
+  section {
+    padding: 4rem 0;
   }
 }
