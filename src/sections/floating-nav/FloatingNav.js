@@ -2,9 +2,9 @@ import "./floating-nav.css"
 
 function FloatingNav() {
   return (
-    <section id="floating-nav">
+    <nav id="floating-nav">
       <h2>FloatingNav</h2>
-    </section>
+    </nav>
   )
 }
 
