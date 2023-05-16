@@ -3,10 +3,10 @@ import Navbar from "./sections/navbar/Navbar"
 import Header from "./sections/header/Header"
 import About from "./sections/about/About"
 import Portfolio from "./sections/portfolio/Portfolio"
-import CurrentlyLearning from "./sections/currently-learning/CurrentlyLearning"
 import Contact from "./sections/contact/Contact"
 import Footer from "./sections/footer/Footer"
 import FloatingNav from "./sections/floating-nav/FloatingNav"
+import Experience from "./sections/experience/Experience"
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       <Header />
       <About />
       <Portfolio />
-      <CurrentlyLearning />
+      <Experience />
       {/* Maybe remove FAQs and Services */}
       {/* <FAQs />
       <Services /> */}

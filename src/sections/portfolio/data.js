@@ -7,47 +7,47 @@ import Project5 from "../../assets/project5.jpg"
 const data = [
   {
     id: 1,
-    category: "frontend",
+    category: "Frontend",
     image: Project1,
-    title: "Project One (frontend)",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    demo: "demo.url",
+    title: "Project One (FE)",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    demo: "https://www.google.com",
     github: "github.url"
   },
   {
     id: 2,
-    category: "frontend & backend",
+    category: "Backend",
     image: Project2,
-    title: "Project Two (frontend & backend)",
+    title: "Project Two (FE & BE)",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    demo: "demo.url",
+    demo: "https://www.google.com",
     github: "github.url"
   },
   {
     id: 3,
-    category: "frontend & backend",
+    category: "Backend",
     image: Project3,
-    title: "Project Three (frontend & backend)",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    demo: "demo.url",
+    title: "Project Three (FE & BE)",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    demo: "https://www.google.com",
     github: "github.url"
   },
   {
     id: 4,
-    category: "frontend",
+    category: "Frontend",
     image: Project4,
-    title: "Project Four (frontend)",
+    title: "Project Four (FE)",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    demo: "demo.url",
+    demo: "https://www.google.com",
     github: "github.url"
   },
   {
     id: 5,
-    category: "frontend",
+    category: "Frontend",
     image: Project5,
-    title: "Project Five (frontend)",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    demo: "demo.url",
+    title: "Project Five (FE)",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    demo: "https://www.google.com",
     github: "github.url"
   }
 ]

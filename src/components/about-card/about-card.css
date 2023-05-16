@@ -13,6 +13,10 @@
   transform: translateY(-0.3rem);
 }
 
+.card:hover span {
+  color: var(--color-primary)
+}
+
 .card.light {
   background-color: var(--color-light);
 }

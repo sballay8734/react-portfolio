@@ -52,7 +52,7 @@ body {
 
 /* GENERAL SECTION STYLES */
 section {
-  padding: 10rem 0;
+  padding: 8rem 0;
   background-color: var(--color-light);
   transition: var(--transition);
 }
@@ -128,6 +128,7 @@ img {
   border: 2px solid transparent;
   border-radius: var(--border-radius-3);
   cursor: pointer;
+  height: fit-content;
 }
 
 .btn:hover {
@@ -157,8 +158,16 @@ img {
   color: var(--color-primary)
 }
 
+.btn.primary:active {
+  background-color: rgb(215, 215, 215);
+}
+
 .btn.sm {
   padding: 0.5rem 1.2rem;
+}
+
+.flex {
+  display: flex;
 }
 
 /* MEDIA QUERIES (tablets) */

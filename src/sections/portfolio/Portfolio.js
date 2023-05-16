@@ -12,7 +12,7 @@ function Portfolio() {
       <h2>Recent Projects</h2>
       <p>Check out some of the projects I recently worked on.</p>
       <div className="container portfolio__container">
-        <ProjectCategories />
+        <ProjectCategories projects={projects} setProjects={setProjects} />
         <Projects projects={projects} />
       </div>
     </section>
