@@ -13,7 +13,8 @@
 }
 
 .experience__card {
-  background-color: var(--color-primary);
+  background-color: white;
+  border: 2px solid transparent;
   color: white;
   padding: 2rem 0;
   width: 100%;
@@ -22,17 +23,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: var(--transition);
+}
+
+.experience__card:hover {
+  border: 2px solid var(--color-primary);
+  background-color: var(--color-light);
+  transition: var(--transition);
 }
 
 .card__items-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  place-items: center;
 }
 
 .experience__card-header {
-  color: white;
+  color: var(--color-primary);
   margin-bottom: 1rem;
   font-size: 1rem;
 }
@@ -56,6 +64,83 @@
 .experience__concept {
   font-weight: bold;
 }
+
+.checkmark {
+  align-self: center;
+  font-size: 1.2rem;
+  color: var(--color-primary)
+}
+
+.primary-color {
+  color: var(--color-primary);
+}
+
+.black {
+  color: black;
+}
+
+.learning-card {
+  min-width: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-light);
+  margin-top: 1rem;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+
+.learning-card-container {
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.learning-card small {
+  color:grey;
+}
+
+.learning-card:hover small {
+  color: rgb(100, 100, 100);
+}
+
+.learning-card:hover h5 {
+  color: rgb(100, 100, 100);
+}
+
+.learning-card:hover {
+  background-color: black;
+}
+
+.learning-path-header {
+  text-align: center;
+  color: black;
+  font-size: 1.5rem;
+  color: var(--color-primary)
+}
+
+.learning-path-wrapper {
+  background-color: white;
+  padding: 2rem 0;
+  border-radius: var(--border-radius-1);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: var(--transition);
+}
+
+.learning-path-wrapper:hover {
+  background-color: var(--color-light);
+  transition: var(--transition);
+}
+
+.learning-path-wrapper:hover .learning-card {
+  background-color: white;
+  border-color: var(--color-primary);
+}
+
+.learning-path-wrapper:hover .learning-card:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+
 
 @media screen and (max-width: 710px) {
   .experience__cards {

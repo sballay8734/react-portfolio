@@ -1,4 +1,4 @@
-import CurrentLearningCard from "./CurrentLearningCard"
+import CurrentLearningCards from "./CurrentLearningCards"
 import ExperienceCard from "./ExperienceCard"
 import "./experience.css"
 
@@ -7,8 +7,8 @@ function Experience() {
 
   return (
     <section id="experience">
-      <h6>What Skills I Have</h6>
       <h2>My Experience</h2>
+      {/* <p>What Skills I Have</p> */}
       <div className="container experience__cards">
         {categories.map((category) => {
           return (
@@ -21,7 +21,14 @@ function Experience() {
           )
         })}
       </div>
-      <CurrentLearningCard />
+      <div className="container learning-path-wrapper">
+        <div className="learning-path-header">
+          What I'm Learning THIS DOESN'T LOOK GOOD
+        </div>
+        <div className="flex learning-card-container">
+          <CurrentLearningCards />
+        </div>
+      </div>
     </section>
   )
 }

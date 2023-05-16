@@ -1,4 +1,5 @@
-import experienceData from "./data"
+import experienceData from "./experience-data"
+import { AiOutlineCheckCircle } from "react-icons/ai"
 
 function ExperienceCard({ area }) {
   const filteredData = experienceData.filter((item) => {
@@ -8,10 +9,14 @@ function ExperienceCard({ area }) {
   const itemsToRender = filteredData.map((item) => {
     return (
       <div key={item.concept} className="flex card__item">
-        <div>+</div>
+        <div className="checkmark">
+          <AiOutlineCheckCircle />
+        </div>
         <div>
-          <p className="white experience__concept">{item.concept}</p>
-          <p className="muted experience__proficiency">{item.proficiency}</p>
+          <p className="black experience__concept">{item.concept}</p>
+          <p className="black muted experience__proficiency">
+            {item.proficiency}
+          </p>
         </div>
       </div>
     )
