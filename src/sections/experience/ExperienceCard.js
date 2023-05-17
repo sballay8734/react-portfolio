@@ -18,6 +18,7 @@ function ExperienceCard({ area }) {
             {item.proficiency}
           </p>
         </div>
+        <span className="experience-card-logo">{item.logo}</span>
       </div>
     )
   })

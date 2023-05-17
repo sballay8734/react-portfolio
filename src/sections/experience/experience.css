@@ -47,6 +47,7 @@
 
 .card__item {
   gap: 0.5rem;
+  position: relative;
 }
 
 .white {
@@ -87,6 +88,17 @@
   background-color: var(--color-light);
   margin-top: 1rem;
   /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+
+.experience-card-logo {
+  position: absolute;
+  display: flex;
+  align-self: center;
+  left: 35%;
+  z-index: 3;
+  color: black;
+  opacity: .1;
+  font-size: 3rem;
 }
 
 .learning-card-container {
