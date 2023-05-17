@@ -94,11 +94,21 @@
   position: absolute;
   display: flex;
   align-self: center;
-  left: 35%;
+  left: 0;
+  bottom: 0;
   z-index: 3;
   color: black;
+  transition: var(--transition);
+  opacity: .1;
+  font-size: 1rem;
+}
+
+.experience__card:hover .experience-card-logo {
+  left: 35%;
+  transform: translateX(2rem);
   opacity: .1;
   font-size: 3rem;
+  transition: var(--transition);
 }
 
 .learning-card-container {
