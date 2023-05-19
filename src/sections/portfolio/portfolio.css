@@ -5,6 +5,10 @@
   gap: 3rem;
 }
 
+#portfolio p {
+  margin-bottom: 2rem;
+}
+
 .portfolio__project {
   padding: 1rem;
   display: flex;

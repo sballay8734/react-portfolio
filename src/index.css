@@ -52,7 +52,7 @@ body {
 
 /* GENERAL SECTION STYLES */
 section {
-  padding: 10rem 0;
+  padding: 8rem 0;
   background-color: var(--color-light);
   transition: var(--transition);
 }

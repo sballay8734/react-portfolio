@@ -1,6 +1,6 @@
 #footer {
   background-color: var(--color-primary);
-  padding-top: 8rem;
+  padding-top: 6rem;
   box-shadow: 0 -1rem 1.5rem hsla(var(--primary-hue), 68%, 42%, 20%);
   transition: var(--transition);
 }
@@ -41,7 +41,7 @@
 
 .footer__socials {
   display: flex;
-  margin: 3rem auto;
+  margin: 2rem auto;
   gap: 0.5rem;
 }
 
@@ -64,4 +64,6 @@
     padding-top: 4rem;
   }
 }
+
+
 
