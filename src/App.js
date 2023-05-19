@@ -11,21 +11,11 @@ import { useRef, useState, useEffect } from "react"
 
 function App() {
   const mainRef = useRef()
-  const [floatingNavIsShown, setFloatingNavIsShown] = useState(false)
+  const [navIsShown, setNavIsShown] = useState(true)
   const [yPosition, setYPosition] = useState(64)
 
   function showFloatingNav() {
-    setFloatingNavIsShown(true)
-  }
-
-  function hideFloatingNav() {
-    setFloatingNavIsShown(false)
-  }
-
-  function checkForStop() {
-    if (window.scrollY === yPosition) {
-      hideFloatingNav()
-    }
+    setNavIsShown(true)
   }
 
   function setScrollPosition() {
@@ -39,7 +29,14 @@ function App() {
       setScrollPosition()
     }
     window.addEventListener("scroll", handler)
-    const intervalCheck = setTimeout(checkForStop, 1300)
+
+    function checkForStop() {
+      if (window.scrollY === yPosition) {
+        setNavIsShown(false)
+      }
+    }
+
+    const intervalCheck = setTimeout(checkForStop, 1800)
 
     return () => {
       window.removeEventListener("scroll", handler)
@@ -59,7 +56,11 @@ function App() {
       <Services /> */}
       <Contact />
       <Footer />
-      {floatingNavIsShown && <FloatingNav />}
+      {navIsShown ? (
+        <FloatingNav className="show" />
+      ) : (
+        <FloatingNav className="hidden" />
+      )}
     </main>
   )
 }

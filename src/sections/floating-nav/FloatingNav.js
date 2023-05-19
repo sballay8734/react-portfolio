@@ -3,9 +3,9 @@ import Nav from "./Nav"
 import Scrollspy from "react-scrollspy"
 import floatingNavLinks from "./floating-nav-data"
 
-function FloatingNav() {
+function FloatingNav({ className }) {
   return (
-    <ul className="container floating__nav">
+    <ul className={`container floating__nav ${className}`}>
       <Scrollspy
         offset={-400}
         className="scrollspy"

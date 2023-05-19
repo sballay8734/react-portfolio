@@ -11,6 +11,12 @@
   left: 0;
   text-align: center;
   backdrop-filter: blur(10px);
+  transition: var(--transition);
+}
+
+.floating__nav.hidden {
+  opacity: 0;
+  transition: var(--transition);
 }
 
 .scrollspy {
@@ -35,6 +41,10 @@
   animation: animateFloatingNav 300ms ease forwards;
 }
 
+.floating__nav.hidden {
+  animation: removeFloatingNav 500ms ease forwards;
+}
+
 @keyframes animateFloatingNav {
   from {
     opacity: 0;
@@ -43,6 +53,17 @@
   to {
     opacity: .8;
     bottom: 1rem;
+  }
+}
+
+@keyframes removeFloatingNav {
+  from {
+    opacity: .8;
+    bottom: 1rem;
+  }
+  to {
+    opacity: 0;
+    bottom: -5rem;
   }
 }
 

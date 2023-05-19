@@ -170,14 +170,6 @@ img {
   display: flex;
 }
 
-.hidden {
-  display: none;
-}
-
-.show {
-  display: block;
-}
-
 /* MEDIA QUERIES (tablets) */
 @media screen and (max-width: 1024px) {
   body {
