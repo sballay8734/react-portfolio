@@ -91,6 +91,27 @@
   animation: animateProject 700ms ease-in forwards;
 }
 
+.portfolio__section.animate {
+  animation: animateSection ease 700ms;
+}
+
+.portfolio__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes animateSection {
+  from {
+    opacity: 0;
+    transform: translateY(-5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes animateProject {
   from {
     opacity: 0;
@@ -154,5 +175,17 @@
   }
   .project__categories-buttons > button {
     font-size: .7rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .portfolio__section-header {
+    font-size: 1.4rem;
+  }
+
+  .portfolio__section-p {
+    max-width: 85%;
+    text-align: center;
+    font-size: .9rem;
   }
 }

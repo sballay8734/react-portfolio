@@ -5,6 +5,14 @@
   justify-content: center;
 }
 
+.experience__section-content h2 { 
+  text-align: center;
+}
+
+.experience__section-content.animate { 
+  animation: animateExperience ease 1000ms;
+}
+
 .experience__cards {
   display: flex;
   gap: 2rem;
@@ -192,6 +200,17 @@
   opacity: .1;
   font-size: 3rem;
   transition: var(--transition);
+}
+
+@keyframes animateExperience {
+  from {
+    opacity: 0;
+    transform: translateY(-5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 
