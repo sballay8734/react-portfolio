@@ -138,6 +138,7 @@
 @media screen and (max-width: 965px) {
   .portfolio__projects {
     grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
   .portfolio__project-cta {
     justify-content: flex-start;
@@ -187,5 +188,12 @@
     max-width: 85%;
     text-align: center;
     font-size: .9rem;
+  }
+}
+
+@media screen and (max-width: 305px) {
+  .portfolio__project-cta {
+    font-size: .7rem;
+    justify-content: center;
   }
 }

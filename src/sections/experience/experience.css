@@ -310,4 +310,8 @@
   .learning-path-wrapper .experience__proficiency {
     font-size: .7rem;
   }
+  .experience__card,
+  .learning__card {
+    padding: 1rem 0;
+  }
 }
