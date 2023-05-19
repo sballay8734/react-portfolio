@@ -167,10 +167,15 @@ textarea {
 @media screen and (max-width: 546px) {
   .contact__options {
     flex-direction: column;
+    width: 80%;
+  }
+
+  .contact__option {
+    width: 100%;
   }
 
   .contact__form {
-    max-width: 20rem;
+    max-width: 80%;
   }
 
   .form__button {
@@ -182,10 +187,11 @@ textarea {
 @media screen and (max-width: 382px) {
   .contact__options {
     flex-direction: column;
+    width: 100%;
   }
 
   .contact__form {
-    max-width: 15rem;
+    max-width: 100%;
   }
 
   .form__button {
