@@ -52,7 +52,7 @@ body {
 
 /* GENERAL SECTION STYLES */
 section {
-  padding: 8rem 0;
+  padding: 10rem 0;
   background-color: var(--color-light);
   transition: var(--transition);
 }
@@ -170,6 +170,14 @@ img {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 /* MEDIA QUERIES (tablets) */
 @media screen and (max-width: 1024px) {
   body {
@@ -181,7 +189,7 @@ img {
   }
 
   section {
-    padding: 6rem 0;
+    padding: 8rem 0;
   }
 
   section > p {
@@ -221,6 +229,6 @@ img {
   }
 
   section {
-    padding: 4rem 0;
+    padding: 6rem 0;
   }
 }

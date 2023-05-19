@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .experience__cards {
@@ -82,11 +83,12 @@
 
 .learning-card {
   min-width: 8rem;
+  max-width: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--color-light);
-  margin-top: 1rem;
+  background-color: var(--color-primary);
+  color: white;
   /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
 
@@ -97,9 +99,9 @@
   left: 0;
   bottom: 0;
   z-index: 3;
-  color: black;
+  color: var(--color-primary);
   transition: var(--transition);
-  opacity: .1;
+  opacity: 0;
   font-size: 1rem;
 }
 
@@ -111,14 +113,12 @@
   transition: var(--transition);
 }
 
-.learning-card-container {
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
+.learning-card small {
+  color:rgb(165, 165, 165);
 }
 
-.learning-card small {
-  color:grey;
+.learning-card h5 {
+  color: white;
 }
 
 .learning-card:hover small {
@@ -133,35 +133,66 @@
   background-color: black;
 }
 
-.learning-path-header {
-  text-align: center;
-  color: black;
-  font-size: 1.5rem;
-  color: var(--color-primary)
+.learning-path-wrapper {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
 }
 
-.learning-path-wrapper {
-  background-color: white;
+.learning__item {
+  display: flex;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.learning__card {
+  background-color: rgb(40, 40, 40);
+  border: 2px solid transparent;
+  color: white;
   padding: 2rem 0;
+  width: 100%;
+  max-width: 30rem;
   border-radius: var(--border-radius-1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transition: var(--transition);
 }
 
-.learning-path-wrapper:hover {
-  background-color: var(--color-light);
+.learning-card-logo {
+  position: absolute;
+  display: flex;
+  align-self: center;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  color: var(--color-primary);
+  transition: var(--transition);
+  opacity: 0;
+  font-size: 1rem;
+}
+
+.learning__card > p {
+ color: rgb(210, 210, 210);
+}
+
+.learning__card .experience__concept {
+ color: grey;
+}
+
+.learning__card .experience__proficiency {
+ color: var(--color-light);
+}
+
+.learning__card:hover .learning-card-logo {
+  left: 35%;
+  transform: translateX(2rem);
+  color: white;
+  opacity: .1;
+  font-size: 3rem;
   transition: var(--transition);
 }
-
-.learning-path-wrapper:hover .learning-card {
-  background-color: white;
-  border-color: var(--color-primary);
-}
-
-.learning-path-wrapper:hover .learning-card:hover {
-  background-color: rgb(0, 0, 0);
-}
-
 
 
 @media screen and (max-width: 710px) {
@@ -169,5 +200,95 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .experience__cards .checkmark,
+  .experience__cards .experience__concept,
+  .experience__cards .experience__proficiency {
+    font-size: .8rem;
+  }
+
+  .learning-path-wrapper .checkmark,
+  .learning-path-wrapper .experience__concept,
+  .learning-path-wrapper .experience__proficiency {
+    font-size: .8rem;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .card__items-wrapper {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .learning-path-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .card__items-wrapper {
+    gap: 2rem;
+  }
+  .experience__cards .checkmark,
+  .experience__cards .experience__concept,
+  .experience__cards .experience__proficiency {
+    font-size: 1rem;
+  }
+  .learning-path-wrapper .checkmark,
+  .learning-path-wrapper .experience__concept,
+  .learning-path-wrapper .experience__proficiency {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .experience__cards .checkmark,
+  .experience__cards .experience__concept,
+  .experience__cards .experience__proficiency {
+    font-size: .8rem;
+  }
+  .learning-path-wrapper .checkmark,
+  .learning-path-wrapper .experience__concept,
+  .learning-path-wrapper .experience__proficiency {
+    font-size: .8rem;
+  }
+
+  .learning__card:hover .learning-card-logo {
+  left: 35%;
+  transform: translateX(2rem);
+  color: white;
+  opacity: .1;
+  font-size: 2.5rem;
+  transition: var(--transition);
+  }
+
+  .experience__card:hover .experience-card-logo {
+  left: 35%;
+  transform: translateX(2rem);
+  opacity: .1;
+  font-size: 2.5rem;
+  transition: var(--transition);
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .card__items-wrapper {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .experience__cards .checkmark,
+  .experience__cards .experience__concept,
+  .experience__cards .experience__proficiency {
+    font-size: .7rem;
+  }
+  .learning-path-wrapper .checkmark,
+  .learning-path-wrapper .experience__concept,
+  .learning-path-wrapper .experience__proficiency {
+    font-size: .7rem;
   }
 }
