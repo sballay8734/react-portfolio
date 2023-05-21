@@ -3,12 +3,12 @@ nav {
   height: 4rem;
   display: grid;
   place-items: center;
-  background-color: var(--color-primary);
+  background-color: var(--color-bg);
   position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
-  box-shadow: 0 1rem 1.5rem hsla(var(--primary-hue), 68%, 42%, 20%);
+  /* box-shadow: 0 1rem 1.5rem hsla(var(--primary-hue), 68%, 42%, 20%); */
   transition: var(--transition);
 }
 
@@ -50,8 +50,8 @@ nav {
 
 /* HIDE NAV MENU ON SMALL DEVICES (tablets and phones) */
 
-@media screen and (max-width: 800px) {
-  .nav__menu {
+@media screen and (max-width: 799px) {
+  #navbar {
     display: none;
   }
 }

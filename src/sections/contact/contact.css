@@ -4,10 +4,14 @@ article a {
 
 .contact__header-5 {
   text-align: center;
+  color: rgb(207, 207, 207);
+  font-weight: 400;
+
 }
 
 .contact__header-2 {
   text-align: center;
+  color: var(--color-light)
 }
 
 .contact__container {
@@ -25,7 +29,7 @@ article a {
   padding: 2rem;
   gap: 0.2rem;
 
-  background-color: var(--color-primary);
+  background-color: var(--color-bg);
   color: white;
   border-radius: 1.5rem;
   border: 2px solid transparent;
@@ -35,9 +39,13 @@ article a {
 .contact__option h4 {
   color: white;
 }
+
+.contact__option a {
+  color: var(--color-primary);
+}
  
 .contact__option:hover {
-  background-color: rgb(40, 40, 40);
+  background-color: transparent;
   border-color: var(--color-primary);
 }
 
@@ -47,6 +55,10 @@ article a {
 
 .contact__option:hover p {
   color: rgb(56, 134, 235);
+}
+
+.contact__option:hover span {
+  color: var(--color-primary)
 }
 
 .contact__option p {
@@ -71,16 +83,21 @@ article a {
 }
 
 .input {
-  border: 2px solid var(--color-primary);
+  border: 2px solid var(--color-bg-variant);
   padding: 0.8rem 0.5rem;
   border-radius: 0.5rem;
-  background-color: rgb(213, 213, 213);
+  background-color: var(--color-bg);
   transition: var(--transition);
+  font-weight: 500;
+  letter-spacing: .07rem;
+  color: var(--color-light);
 }
 
 .input:focus {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--color-bg-variant);
   transition: var(--transition);
+  color: var(--color-light);
+  border-color: var(--color-light);
 }
 
 .form__button {
@@ -90,24 +107,24 @@ article a {
   border: 2px solid var(--color-primary);
   cursor: pointer;
   background-color: var(--color-primary);
-  color: white;
+  color: var(--color-bg);
   transition: var(--transition);
 }
 
 .form__button:hover {
-  background-color: var(--color-light);
+  background-color: var(--color-primary-variant);
   color: var(--color-primary);
   transition: var(--transition);
 }
 
 .form__button:active {
-  background-color: grey;
+  background-color: rgba(77, 181, 255, 0.7);
   transition: var(--transition);
 }
 
 textarea {
   max-width: 100%;
-  height: 12.5rem;
+  height: 13.2rem;
   width: 25rem;
   max-height: 15rem;
   resize: none;

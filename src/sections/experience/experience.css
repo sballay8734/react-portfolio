@@ -5,8 +5,13 @@
   justify-content: center;
 }
 
+.p {
+  text-align: center;
+}
+
 .experience__section-content h2 { 
   text-align: center;
+  color: var(--color-light)
 }
 
 .experience__section-content.animate { 
@@ -22,7 +27,7 @@
 }
 
 .experience__card {
-  background-color: white;
+  background-color: var(--color-bg);
   border: 2px solid transparent;
   color: white;
   padding: 2rem 0;
@@ -38,7 +43,7 @@
 
 .experience__card:hover {
   border: 2px solid var(--color-primary);
-  background-color: var(--color-light);
+  background-color: transparent;
   transition: var(--transition);
 }
 
@@ -73,6 +78,7 @@
 
 .experience__concept {
   font-weight: bold;
+  color: white;
 }
 
 .checkmark {
@@ -121,6 +127,14 @@
   transition: var(--transition);
 }
 
+.experience__card:hover .experience__concept {
+  color: var(--color-light);
+}
+
+.experience__card:hover .experience__proficiency {
+  color: rgb(194, 194, 194);
+}
+
 .learning-card small {
   color:rgb(165, 165, 165);
 }
@@ -154,7 +168,7 @@
 }
 
 .learning__card {
-  background-color: rgb(40, 40, 40);
+  background-color: var(--color-bg);
   border: 2px solid transparent;
   color: white;
   padding: 2rem 0;
@@ -186,11 +200,11 @@
 }
 
 .learning__card .experience__concept {
- color: grey;
+ color: white;
 }
 
 .learning__card .experience__proficiency {
- color: var(--color-light);
+ color: rgb(194, 194, 194);
 }
 
 .learning__card:hover .learning-card-logo {
@@ -200,6 +214,12 @@
   opacity: .1;
   font-size: 3rem;
   transition: var(--transition);
+  color: var(--color-primary)
+}
+
+.learning__card:hover {
+  background-color: transparent;
+  border-color: var(--color-primary);
 }
 
 @keyframes animateExperience {

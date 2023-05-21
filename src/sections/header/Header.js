@@ -6,16 +6,9 @@ function Header() {
   return (
     <header id="header">
       <div className="container header__container">
-        <div className="header__profile">
-          <img src={HeaderImage} alt="Header Portrait" />
-        </div>
-        <h3>Shawn Ballay</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
+        <p className="hello">Hello, I'm</p>
+        <h2 className="name">Shawn Ballay</h2>
+        <p className="animate">Developer (Animate this)</p>
         <div className="header__cta">
           <a className="btn primary" href="#contact">
             Contact Me
@@ -25,6 +18,9 @@ function Header() {
           </a>
         </div>
         <div className="header__socials">{renderedLinks}</div>
+        <div className="header__profile">
+          <img src={HeaderImage} alt="Header Portrait" />
+        </div>
       </div>
     </header>
   )

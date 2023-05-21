@@ -17,7 +17,7 @@ function Experience() {
         }`}
       >
         <h2>My Experience</h2>
-        {/* <p>What Skills I Have</p> */}
+        <p className="p">What I know and what I'm learning</p>
         <div className="container experience__cards">
           {categories.map((category) => {
             return (

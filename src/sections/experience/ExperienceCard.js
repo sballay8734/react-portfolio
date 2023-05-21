@@ -13,10 +13,8 @@ function ExperienceCard({ area }) {
           <AiOutlineCheckCircle />
         </div>
         <div>
-          <p className="black experience__concept">{item.concept}</p>
-          <p className="black muted experience__proficiency">
-            {item.proficiency}
-          </p>
+          <p className="experience__concept">{item.concept}</p>
+          <p className="muted experience__proficiency">{item.proficiency}</p>
         </div>
         <span className="experience-card-logo">{item.logo}</span>
       </div>
