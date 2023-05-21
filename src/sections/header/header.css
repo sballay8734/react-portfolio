@@ -17,8 +17,10 @@ header {
   font-weight: 500;
 }
 
-.animate {
-  color: rgb(176, 176, 176);
+.Typewriter__wrapper,
+.Typewriter__cursor {
+  color: var(--color-primary);
+  font-size: 1rem;
 }
 
 .header__container {

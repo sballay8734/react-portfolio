@@ -14,16 +14,16 @@
   --dark-lightness: 44%;
   --light-lightness: 94%;
   --white-lightness: 100%;
-  --color-primary: #4db5ff;
   --color-white: hsl(0, 5%, var(--white-lightness));
   --color-light: hsl(var(--primary-hue), 5%, var(--light-lightness));
   --color-black: hsl(var(--primary-hue), 5%, var(--black-lightness));
   --color-dark: hsl(var(--primary-hue), 5%, var(--dark-lightness));
   
   /* New Colors */
+  --color-primary: #4db5ff;
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
   --color-bg: #1f1f38;
   --color-bg-variant: #2c2c6c;
-  --color-primary-variant: rgba(77, 181, 255, 0.4);
   --color-white: #fff;
 
   /* TRANSITION VARIABLE */
@@ -80,6 +80,10 @@ section > p {
 section > p {
   margin: 0.5rem auto 2rem;
   width: 40%;
+}
+
+p {
+  color:rgb(207, 207, 207);
 }
 
 /* GENERAL a-tag STYLES */

@@ -1,6 +1,7 @@
 import "./header.css"
 import HeaderImage from "../../assets/header.jpg"
 import renderedLinks from "./social-links"
+import Typewriter from "typewriter-effect"
 
 function Header() {
   return (
@@ -8,7 +9,19 @@ function Header() {
       <div className="container header__container">
         <p className="hello">Hello, I'm</p>
         <h2 className="name">Shawn Ballay</h2>
-        <p className="animate">Developer (Animate this)</p>
+        <Typewriter
+          className="animate"
+          options={{
+            strings: [
+              "Developer",
+              "Below Average Golfer",
+              "Producer",
+              "Health Enthusiast"
+            ],
+            autoStart: true,
+            loop: true
+          }}
+        />
         <div className="header__cta">
           <a className="btn primary" href="#contact">
             Contact Me
