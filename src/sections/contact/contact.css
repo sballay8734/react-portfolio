@@ -85,7 +85,6 @@ article a {
 
 .form__button {
   display: flex;
-  margin-right: auto;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   border: 2px solid var(--color-primary);
@@ -112,6 +111,25 @@ textarea {
   width: 25rem;
   max-height: 15rem;
   resize: none;
+}
+
+.button__message {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.form__success-message {
+  color: rgb(0, 188, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: bold;
+}
+
+.form__success-message span {
+  display: flex;
 }
 
 .contact__section-wrapper.animate {
@@ -161,6 +179,10 @@ textarea {
   .form__button {
     padding: 1.2rem 2rem;
     font-size: 1.1rem;
+  }
+
+  .button__message {
+    flex-direction: column;
   }
 }
 
