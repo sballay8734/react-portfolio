@@ -44,8 +44,8 @@ header {
 }
 
 .header__profile {
-  width: 18rem;
-  height: 24rem;
+  width: 12rem;
+  height: 18rem;
   border-radius: 9rem 9rem 0 0;
   overflow: hidden;
   position: relative;
@@ -139,7 +139,7 @@ header {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .header__profile {
     width: 14rem;
     height: 17rem;
@@ -152,9 +152,20 @@ header {
   .header__cta {
     gap: 1rem;
   }
-
-  .header__socials {
+  .header__socials,
+  .nav__menu,
+  .nav__logo {
     display: none;
+  }
+  #navbar {
+    background-color: transparent;
+  }
+  .nav__container #theme__icon {
+    margin-left: auto;
+    color: white;
+  }
+  .nav__container #theme__icon:hover {
+    color: gray;
   }
 }
 

@@ -3,8 +3,15 @@ import "../../index.css"
 import "./navbar.css"
 import renderedLinks from "./links"
 import { BsDroplet } from "react-icons/bs"
+import useModal from "../../hooks/useModal"
 
 function Navbar() {
+  const { showModal } = useModal()
+
+  function handleClick() {
+    showModal()
+  }
+
   return (
     <nav id="navbar">
       <div className="container nav__container">
@@ -13,7 +20,7 @@ function Navbar() {
         </a>
         {/* From links.js */}
         <ul className="nav__menu">{renderedLinks}</ul>
-        <button id="theme__icon">
+        <button id="theme__icon" onClick={handleClick}>
           <BsDroplet />
         </button>
       </div>

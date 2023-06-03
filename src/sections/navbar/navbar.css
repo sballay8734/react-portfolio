@@ -48,10 +48,16 @@ nav {
   color: white;
 }
 
+@media screen and (max-width: 799px) {
+  .nav__menu {
+    gap: 2.5rem;
+  }
+}
+
 /* HIDE NAV MENU ON SMALL DEVICES (tablets and phones) */
 
-@media screen and (max-width: 799px) {
+/* @media screen and (max-width: 799px) {
   #navbar {
     display: none;
   }
-}
+} */
