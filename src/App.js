@@ -9,13 +9,15 @@ import FloatingNav from "./sections/floating-nav/FloatingNav"
 import Experience from "./sections/experience/Experience"
 import { useRef, useState, useEffect } from "react"
 import useModal from "./hooks/useModal"
-import Modal from "./components/about-card/Modal"
+import Theme from "./theme/Theme"
+import useTheme from "./hooks/useTheme"
 
 function App() {
   const mainRef = useRef()
   const [navIsShown, setNavIsShown] = useState(true)
   const [yPosition, setYPosition] = useState(64)
   const { modalIsShown } = useModal()
+  const { theme } = useTheme()
 
   function showFloatingNav() {
     setNavIsShown(true)
@@ -48,7 +50,7 @@ function App() {
   }, [yPosition])
 
   return (
-    <main ref={mainRef}>
+    <main className={theme} ref={mainRef}>
       <Navbar />
       <Header />
       <About />
@@ -64,7 +66,7 @@ function App() {
       ) : (
         <FloatingNav className="hidden" />
       )}
-      {modalIsShown ? <Modal /> : ""}
+      {modalIsShown ? <Theme /> : ""}
     </main>
   )
 }

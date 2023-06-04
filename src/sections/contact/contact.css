@@ -104,7 +104,7 @@ article a {
   display: flex;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  border: 2px solid var(--color-primary);
+  border: 1px solid var(--color-primary);
   cursor: pointer;
   background-color: var(--color-primary);
   color: var(--color-bg);
@@ -118,7 +118,7 @@ article a {
 }
 
 .form__button:active {
-  background-color: rgba(77, 181, 255, 0.7);
+  background-color: var(--color-primary-variant-active);
   transition: var(--transition);
 }
 

@@ -13,6 +13,10 @@
   transform: translateY(-0.3rem);
 }
 
+.portfolio__project:hover {
+  transform: translateY(0);
+}
+
 .card:hover span {
   color: var(--color-primary)
 }

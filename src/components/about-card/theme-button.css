@@ -1,0 +1,44 @@
+.theme-buttons button {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 100%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.theme-buttons button:hover {
+  border: 2px solid rgb(234, 234, 234);
+  transition: var(--transition);
+}
+
+.theme-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.theme-buttons .color-1 {
+  background-color: rgba(31, 31, 56);
+}
+
+.theme-buttons .color-2 {
+  background-color: rgb(31, 56, 56);
+}
+
+.theme-buttons .color-3 {
+  background-color: rgba(31, 56, 31);
+}
+
+.theme-buttons .color-4 {
+  background-color: rgba(56, 31, 31);
+}
+
+.theme-buttons .color-5 {
+  background-color: rgba(186, 56, 56);
+}
+
+.theme-buttons .color-6 {
+  background-color: rgba(44, 143, 122);
+}

@@ -14,9 +14,9 @@ function Header() {
           options={{
             strings: [
               "Developer",
+              "Teacher",
               "Below Average Golfer",
-              "Producer",
-              "Health Enthusiast"
+              "Producer"
             ],
             autoStart: true,
             loop: true

@@ -32,20 +32,32 @@ nav {
 }
 
 .nav__menu > li > a:hover {
-  color: var(--primary-color);
+  color: var(--color-primary);
 }
 
 #theme__icon {
   background-color: transparent;
-  color: var(--primary-color);
-  font-size: 1.3rem;
+  display: flex;
+  color: white;
+  font-size: 1.4rem;
   cursor: pointer;
   transition: var(--transition);
 }
 
 #theme__icon:hover {
   transition: var(--transition);
-  color: white;
+  color: black;
+}
+
+#theme__icon:active {
+  color: var(--color-primary);
+}
+
+@media screen and (max-width: 650px) {
+  #theme__icon {
+    font-size: 2rem;
+    margin: 2rem 2rem 0 0 ;
+  }
 }
 
 @media screen and (max-width: 799px) {

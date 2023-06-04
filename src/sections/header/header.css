@@ -89,6 +89,10 @@ header {
   transform: translateX(-0.3rem);
 }
 
+.header__socials a:active {
+  background-color: var(--color-primary-variant-active);
+}
+
 .header__socials {
   position: absolute;
   left: 0;
@@ -111,8 +115,9 @@ header {
 }
 
 .btn.primary:active {
-  background-color: rgba(77, 181, 255, 0.7);
+  background-color: var(--color-primary-variant-active);
 }
+
 
 .btn.light {
   background-color: var(--color-primary);
@@ -126,7 +131,7 @@ header {
 }
 
 .btn.light:active {
-  background-color: rgba(77, 181, 255, 0.7);
+  background-color: var(--color-primary-variant-active);
 }
 /* MEDIA QUERIES (tablets) */
 

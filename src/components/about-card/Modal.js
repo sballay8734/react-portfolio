@@ -1,14 +1,9 @@
 import ReactDOM from "react-dom"
 import "./modal.css"
-import useModal from "../../hooks/useModal"
 
-function Modal() {
-  const { hideModal } = useModal()
+function Modal({ children }) {
   return ReactDOM.createPortal(
-    <>
-      <div className="modal-background" onClick={() => hideModal()}></div>
-      <div className="modal-content">Blah</div>
-    </>,
+    <>{children}</>,
     document.querySelector("#modal-container")
   )
 }

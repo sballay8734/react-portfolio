@@ -72,8 +72,8 @@
   color: var(--color-primary)
 }
 
-.project__left-button:active {
-  background-color: rgb(215, 215, 215);
+.btn.sm.project__left-button:active {
+  background-color: var(--color-primary-variant-active);
 }
 
 .project__categories-buttons {
@@ -84,11 +84,18 @@
 
 .project__categories-buttons .btn {
   transition: var(--transition);
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
 }
 
 .project__categories-buttons .btn:hover {
-  border-color: var(--color-primary);
-  color: var(--color-primary);
+  background-color: var(--color-primary-variant);
+  transform: translateY(0);
+}
+
+.project__categories-buttons .btn:active {
+  background-color: var(--color-primary-variant-active);
   transform: translateY(0);
 }
 
