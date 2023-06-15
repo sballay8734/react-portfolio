@@ -191,4 +191,14 @@
   .about__cards h5 {
     font-size: .8rem;
   }
+
+  .short-version {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .short-version {
+    font-size: 0.7rem;
+  }
 }
