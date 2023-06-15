@@ -1,6 +1,5 @@
 import { FaAward } from "react-icons/fa"
 import { TbBooks } from "react-icons/tb"
-import { BiHappyHeartEyes } from "react-icons/bi"
 import { MdGolfCourse } from "react-icons/md"
 import AboutCard from "../../components/about-card/AboutCard"
 

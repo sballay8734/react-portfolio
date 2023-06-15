@@ -11,6 +11,7 @@
   left: 0;
   text-align: center;
   backdrop-filter: blur(10px);
+  z-index: 9999;
   transition: var(--transition);
 }
 
