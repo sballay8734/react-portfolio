@@ -1,5 +1,5 @@
 import "./header.css"
-import HeaderImage from "../../assets/header.jpg"
+import headshotOne from "../../assets/headshot-1a.jpg"
 import renderedLinks from "./social-links"
 import Typewriter from "typewriter-effect"
 
@@ -32,7 +32,7 @@ function Header() {
         </div>
         <div className="header__socials">{renderedLinks}</div>
         <div className="header__profile">
-          <img src={HeaderImage} alt="Header Portrait" />
+          <img src={headshotOne} alt="Header Portrait" />
         </div>
       </div>
     </header>

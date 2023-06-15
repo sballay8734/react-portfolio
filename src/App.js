@@ -56,9 +56,6 @@ function App() {
       <About />
       <Portfolio />
       <Experience />
-      {/* Maybe remove FAQs and Services */}
-      {/* <FAQs />
-      <Services /> */}
       <Contact />
       <Footer />
       {navIsShown ? (

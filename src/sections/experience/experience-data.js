@@ -1,11 +1,11 @@
 import { AiFillHtml5 } from "react-icons/ai"
-import { SiJavascript } from "react-icons/si"
+import { SiExpress, SiJavascript } from "react-icons/si"
 import { SiTailwindcss } from "react-icons/si"
 import { SiCss3 } from "react-icons/si"
 import { FaReact } from "react-icons/fa"
 import { SiBootstrap } from "react-icons/si"
-import { SiNextdotjs } from "react-icons/si"
-import { GrMysql } from "react-icons/gr"
+// import { SiNextdotjs } from "react-icons/si"
+// import { GrMysql } from "react-icons/gr"
 import { FaNodeJs } from "react-icons/fa"
 import { SiMongodb } from "react-icons/si"
 
@@ -47,22 +47,16 @@ const experienceData = [
     logo: <SiBootstrap />
   },
   {
-    concept: "Next JS",
+    concept: "Express JS",
     proficiency: "Intermediate",
     area: "Backend",
-    logo: <SiNextdotjs />
+    logo: <SiExpress />
   },
   {
     concept: "Node JS",
     proficiency: "Intermediate",
     area: "Backend",
     logo: <FaNodeJs />
-  },
-  {
-    concept: "MySQL",
-    proficiency: "Basic",
-    area: "Backend",
-    logo: <GrMysql />
   },
   {
     concept: "MongoDB",

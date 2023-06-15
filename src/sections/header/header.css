@@ -45,8 +45,8 @@ header {
 }
 
 .header__profile {
-  width: 12rem;
-  height: 18rem;
+  width: 16rem;
+  height: 24rem;
   border-radius: 9rem 9rem 0 0;
   overflow: hidden;
   position: relative;
@@ -65,7 +65,7 @@ header {
   }
 
 .header__profile img {
-  mask-image: linear-gradient(rgba(0, 0, 0, 1) 50%, transparent 100%);
+  mask-image: linear-gradient(rgba(0, 0, 0, 1) 0%, transparent 90%);
   }
 
 .header__socials a {
@@ -151,10 +151,7 @@ header {
     margin-top: 0;
   }
   .header__profile {
-    width: 14rem;
-    height: 17rem;
     max-width: 60%;
-    max-height: 35vh;
   }
   .header__container p {
     width: 100%;

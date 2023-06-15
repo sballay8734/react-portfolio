@@ -24,10 +24,12 @@
 .about__portrait img {
   object-fit: cover;
   max-height: 40rem;
+  filter: brightness(80%);
 }
 
 .about__portrait:hover {
-  border-color: transparent;
+  border-color: var(--color-primary);
+  transition: var(--transition);
 }
 
 .about__cards {
@@ -87,7 +89,7 @@
   align-items: center;
   width: fit-content;
   cursor: pointer;
-  opacity: 0.3;
+  opacity: 0.5;
   transition: var(--transition);
 }
 
@@ -100,7 +102,7 @@
 
 .long-version-wrapper:hover {
   cursor: pointer;
-  opacity: 0.5;
+  opacity: 0.8;
   transition: var(--transition);
 }
 

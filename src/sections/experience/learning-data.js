@@ -1,7 +1,6 @@
-// import { FaDocker } from "react-icons/fa"
-// import { SiKubernetes } from "react-icons/si"
+import { FaDocker } from "react-icons/fa"
+import { SiKubernetes, SiNodedotjs } from "react-icons/si"
 import { SiTypescript } from "react-icons/si"
-import { SiPostgresql } from "react-icons/si"
 import { GrMysql } from "react-icons/gr"
 import { SiAmazonaws } from "react-icons/si"
 import { SiNextdotjs } from "react-icons/si"
@@ -12,37 +11,31 @@ const futureLearningData = [
     concept: "TypeScript",
     area: "Frontend",
     logo: <SiTypescript />,
+    time: "Currently"
+  },
+  {
+    concept: "Docker",
+    area: "Backend",
+    logo: <FaDocker />,
     time: "Future"
   },
-  // {
-  //   concept: "Docker",
-  //   area: "Backend",
-  //   logo: <FaDocker />,
-  //   time: "Future"
-  // },
-  // {
-  //   concept: "Kubernetes",
-  //   area: "Backend",
-  //   logo: <SiKubernetes />,
-  //   time: "Future"
-  // },
+  {
+    concept: "Kubernetes",
+    area: "Backend",
+    logo: <SiKubernetes />,
+    time: "Future"
+  },
   {
     concept: "Amazon S3",
     area: "Backend",
     logo: <SiAmazonaws />,
     time: "Future"
   },
-  // {
-  //   concept: "Dynamo DB",
-  //   area: "Backend",
-  //   logo: <SiAmazonaws />,
-  //   time: "Future"
-  // },
   {
-    concept: "Postgres",
+    concept: "Node JS",
     area: "Backend",
-    logo: <SiPostgresql />,
-    time: "Future"
+    logo: <SiNodedotjs />,
+    time: "Currently"
   },
   {
     concept: "MySQL",

@@ -1,5 +1,5 @@
 import "./about.css"
-import AboutImage from "../../assets/about.jpg"
+import headshotThree from "../../assets/headshot-3a.jpg"
 import CV from "../../assets/cv.pdf"
 import { FiDownloadCloud } from "react-icons/fi"
 import renderedCards from "./about-items"
@@ -26,7 +26,7 @@ function About() {
       >
         <div className="about__left">
           <div className="about__portrait">
-            <img src={AboutImage} alt="About Portrait" />
+            <img src={headshotThree} alt="About Portrait" />
           </div>
         </div>
         <div className="about__right">
