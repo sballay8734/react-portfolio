@@ -2,6 +2,7 @@ import Modal from "../components/about-card/Modal"
 import useModal from "../hooks/useModal"
 import { primaryColors } from "../components/about-card/themeData"
 import ThemeButton from "../components/about-card/ThemeButton"
+import "./theme.css"
 
 function Theme() {
   const { hideModal } = useModal()

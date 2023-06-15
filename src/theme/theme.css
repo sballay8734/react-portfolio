@@ -1,0 +1,21 @@
+.modal-content {
+  opacity: 0;
+  animation: animateModal ease-in 400ms forwards;
+}
+
+.modal-background {
+  opacity: 0;
+  animation: animateModalBackground ease-in 400ms forwards;
+}
+
+@keyframes animateModal {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animateModalBackground {
+  to {
+    opacity: 0.7;
+  }
+}

@@ -3,10 +3,13 @@ import { createContext, useState } from "react"
 const ThemeContext = createContext()
 
 function ThemeProvider({ children }) {
-  const [theme, setTheme] = useState("color-1")
+  const storedTheme = localStorage.getItem("theme")
+  const [theme, setTheme] = useState(storedTheme || "color-1")
 
   function updateTheme(newTheme) {
     setTheme(newTheme)
+    localStorage.setItem("theme", newTheme)
+    console.log(localStorage.getItem("theme"))
   }
 
   return (
