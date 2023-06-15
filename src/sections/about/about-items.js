@@ -1,6 +1,7 @@
 import { FaAward } from "react-icons/fa"
 import { TbBooks } from "react-icons/tb"
 import { BiHappyHeartEyes } from "react-icons/bi"
+import { MdGolfCourse } from "react-icons/md"
 import AboutCard from "../../components/about-card/AboutCard"
 
 const items = [
@@ -8,9 +9,9 @@ const items = [
   { id: 2, icon: <TbBooks />, title: "Projects", desc: "20+ completed" },
   {
     id: 3,
-    icon: <BiHappyHeartEyes />,
-    title: "Something",
-    desc: "Blah blah"
+    icon: <MdGolfCourse />,
+    title: "Break 90 Counter",
+    desc: "0"
   }
 ]
 
