@@ -9,7 +9,6 @@ function ThemeProvider({ children }) {
   function updateTheme(newTheme) {
     setTheme(newTheme)
     localStorage.setItem("theme", newTheme)
-    console.log(localStorage.getItem("theme"))
   }
 
   return (

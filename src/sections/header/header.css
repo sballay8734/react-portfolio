@@ -121,7 +121,7 @@ header {
 
 .btn.light {
   background-color: var(--color-primary);
-  color: var(--color-bg);
+  color: var(--color-bg-variant);
 }
 
 .btn.light:hover {

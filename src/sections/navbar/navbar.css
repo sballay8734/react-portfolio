@@ -32,7 +32,7 @@ nav {
 }
 
 .nav__menu > li > a:hover {
-  color: var(--color-primary);
+  color: var(--color-bg-variant);
 }
 
 #theme__icon {

@@ -21,7 +21,7 @@
 }
 
 .footer__nav > li > a:hover {
-  color: black;
+  color: var(--color-bg-variant);
 }
 
 .footer__socials a {
@@ -33,7 +33,7 @@
 }
 
 .footer__socials a:hover {
-  background-color: var(--color-primary);
+  background-color: var(--color-bg-variant);
   color: var(--color-white);
   /* transform: translateY(-0.3rem); */
 }
