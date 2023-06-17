@@ -9,7 +9,7 @@
 
 .theme-buttons button:hover {
   border: 2px solid rgb(0, 0, 0);
-  transition: var(--transition);
+  transition: ease 100ms;
 }
 
 .theme-buttons {
