@@ -1,4 +1,4 @@
-import Logo from "../../assets/logo.jpg"
+import Logo from "../../assets/icon-photo.jpg"
 import "../../index.css"
 import "./navbar.css"
 import renderedLinks from "./links"
