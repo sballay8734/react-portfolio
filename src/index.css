@@ -233,12 +233,12 @@ main.color-5 {
 }
 main.color-6 {
   /* Purple */
-  --color-primary: rgb(98, 36, 255);
+  --color-primary: rgb(127, 77, 255);
   --color-primary-variant: rgba(98, 36, 255, 0.4);
   --color-primary-variant-active: rgba(98, 36, 255, 0.7);
-  --color-bg: rgb(91, 0, 202);
-  --color-bg-variant: rgb(44, 22, 83);
-  --color-new-bg: rgb(44, 22, 83);
+  --color-bg: rgb(105, 30, 195);
+  --color-bg-variant: rgb(47, 30, 76);
+  --color-new-bg: rgb(47, 30, 76);
 }
 
 .btn.primary:active {
