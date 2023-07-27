@@ -16,12 +16,12 @@ const data = [
   },
   {
     id: 2,
-    category: "Backend",
+    category: "Frontend",
     image: Project2,
-    title: "Project Two (FE & BE)",
+    title: "Movie API",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    demo: "https://www.google.com",
-    github: "github.url"
+    demo: "https://my-flix-db-l3gw.vercel.app/",
+    github: "https://github.com/sballay8734/myFlixDB"
   },
   {
     id: 3,
